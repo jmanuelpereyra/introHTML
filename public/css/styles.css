@@ -1,0 +1,28 @@
+body {
+  background-color: #eac926;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+h2 {
+  font-size: 24px;
+}
+article p {
+  font-size: 16px;
+}
+article strong {
+  font-size: 16px;
+}
+.precio {
+  font-size: 18px;
+}
+.burger-menu {
+  color: white;
+  background-color: blue;
+  text-align: center;
+  background-position: center center;
+}
+
+footer {
+  text-align: center;
+  line-height: 10px;
+}
