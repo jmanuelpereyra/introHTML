@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de Usuario</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/register.css" />
+  </head>
+  <body>
+    <main>
+      <section class="formulario">
+        <form action="/register" method="post">
+          <div class="nombreyapellido">
+            <input
+              type="text"
+              name="nombreyapellido"
+              placeholder="Nombre y Apellido"
+            />
+          </div>
+          <div class="usuario">
+            <input type="text" name="usuario" placeholder="Nombre de usuari@" />
+          </div>
+          <div class="email">
+            <input type="email" name="email" placeholder="E-mail" />
+          </div>
+          <div class="date">
+            <label for="date">Fecha de nacimiento</label>
+            <input id="date" type="date" name="date" /><i class="far fa-calendar"></i>
+          </div>
+          <div class="domicilio">
+            <input type="text" name="domicilio" placeholder="Domicilio" />
+          </div>
+          <div class="perfil">
+            <label for="perfil">Perfil de usuario</label>
+            <input
+              type="radio"
+              id="perfil"
+              name="perfil"
+              value="comprador"
+            />Comprador
+            <input
+              type="radio"
+              id="perfil"
+              name="perfil"
+              value="vendedor"
+            />Vendedor
+          </div>
+          <div class="intereses">
+            <label for="intereses">Intereses</label>
+            <input type="checkbox" name="intereses" id="intereses" value="electro" />Electro
+            <input type="checkbox" name="intereses" id="intereses" value="moda" />Moda
+            <input type="checkbox" name="intereses" id="intereses" value="hogar" />Hogar
+            <input type="checkbox" name="intereses" id="intereses" value="jugueteria" />Juguetería
+            <input type="checkbox" name="intereses" id="intereses" value="vidasana" /> Vida sana
+          </div>
+          <div class="foto">
+              <label for="fotodeusuario">¡Elegí tu foto de usuario!</label>
+              <input type="file" name="fotodeusuario" id="fotodeusuario" accept=".jpeg, .png, .bmp, .tiff, .gif, .pdf, .png, .eps, .svg">
+          </div>
+          <div class="contrasenia">
+              <label for="password">Contraseña</label>
+              <input type="password" name="password" id="password">
+              <label for="confirm">Confirmar contraseña</label>
+              <input type="password" name="confirm" id="confirm">
+          </div>
+          <button type="submit">Enviar</button>
+          <button type="reset">Borrar</button>
+        </form>
+    </main>
+    
+  </body>
+</html>
