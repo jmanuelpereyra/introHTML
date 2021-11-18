@@ -3,19 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   background-color: #ebebeb;
 }
-.boton {
-  transition: background-color 450ms;
-}
-.boton:hover {
-  background-color: #0022aa;
-  color: white;
-}
+
+/* header */
+
 .main-header-top-bar {
   display: flex;
   justify-content: space-between;
@@ -67,6 +62,30 @@ body {
   font-size: 17px;
 }
 
+/* main */
+main {
+  height: 40vw;
+}
+.boton {
+  margin: 10px 0;
+  transition: background-color 450ms;
+}
+.boton:hover {
+  background-color: #0022aa;
+  color: white;
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+main input {
+  width: 25vw;
+  margin: 10px 0;
+}
+
+/* footer */
 footer {
   background-color: white;
   text-align: center;
@@ -83,6 +102,8 @@ footer h3 {
   margin-top: 2em;
   font-size: 1.2em;
 }
+
+/* media */
 
 @media (min-width: 361px) {
   .main-header-total {

@@ -10,6 +10,8 @@ body {
   background-color: #ebebeb;
 }
 
+/* header */
+
 .main-header-top-bar {
   display: flex;
   justify-content: space-between;
@@ -60,6 +62,30 @@ body {
   padding: 5px 0;
   font-size: 17px;
 }
+/* main */
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+main input {
+  width: 50vw;
+  margin: 10px 0;
+}
+.radio {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.contrasenia {
+  display: flex;
+  flex-wrap: wrap;
+}
+form label {
+  font-size: 16px;
+  font-weight: 400;
+}
+/* footer */
 
 footer {
   background-color: white;
@@ -77,6 +103,8 @@ footer h3 {
   margin-top: 2em;
   font-size: 1.2em;
 }
+
+/* media */
 
 @media (min-width: 361px) {
   .main-header-total {

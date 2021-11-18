@@ -63,8 +63,8 @@
       </div>
     </header>
     <main>
-      <section class="formulario">
-        <form action="/register" method="post">
+      <section>
+        <form action="/register" method="post"  class="formulario">
           <div class="nombreyapellido">
             <input
               type="text"
@@ -79,14 +79,15 @@
             <input type="email" name="email" placeholder="E-mail" />
           </div>
           <div class="date">
-            <label for="date">Fecha de nacimiento</label>
+            <label for="date">Fecha de nacimiento</label> <br>
             <input id="date" type="date" name="date" /><i class="far fa-calendar"></i>
           </div>
           <div class="domicilio">
             <input type="text" name="domicilio" placeholder="Domicilio" />
           </div>
           <div class="perfil">
-            <label for="perfil">Perfil de usuario</label>
+            <label for="perfil">Perfil de usuario</label><br>
+            <div class="radio">
             <input
               type="radio"
               id="perfil"
@@ -100,8 +101,9 @@
               value="vendedor"
             />Vendedor
           </div>
+        </div>
           <div class="intereses">
-            <label for="intereses">Intereses</label>
+            <label for="intereses">Intereses</label> <br>
             <input type="checkbox" name="intereses" id="intereses" value="electro" />Electro
             <input type="checkbox" name="intereses" id="intereses" value="moda" />Moda
             <input type="checkbox" name="intereses" id="intereses" value="hogar" />Hogar
@@ -113,10 +115,14 @@
               <input type="file" name="fotodeusuario" id="fotodeusuario" accept=".jpeg, .png, .bmp, .tiff, .gif, .pdf, .png, .eps, .svg">
           </div>
           <div class="contrasenia">
+            <div class="contrasenia1">
               <label for="password">Contraseña</label>
               <input type="password" name="password" id="password">
+            </div>
+            <div class="contrasenia2">
               <label for="confirm">Confirmar contraseña</label>
               <input type="password" name="confirm" id="confirm">
+            </div>
           </div>
           <button type="submit">Enviar</button>
           <button type="reset">Borrar</button>
