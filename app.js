@@ -9,8 +9,11 @@ app.use(express.static(publicPath));
 // app.use(express.json);
 app.use(urlencoded({ extended: true }));
 
-app.listen(3000, () => {
-  console.log("Servidor OK");
+// app.listen(3000, () => {
+//   console.log("Servidor OK");
+// });
+app.listen(process.env.PORT || 4000, () => {
+  console.log("Servidor funcionando");
 });
 
 app.get("/", (req, res) => {

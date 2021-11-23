@@ -13,6 +13,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/login.css" />
+    <form action="/login" method="POST" class="create-form" onsubmit="return validateForm()" name="myForm">
+      <div class="user">
+        <input type="text" name="user" placeholder="Nombre de usuari@" />
+      </div>
   </head>
   <body>
     <header class="main-header">
@@ -108,4 +112,5 @@
       <h3>Copyright © 1999-2020 MercadoLiebre S.R.L.</h3>
     </footer>
   </body>
+  <script src="scripts/login.js"></script>
 </html>
