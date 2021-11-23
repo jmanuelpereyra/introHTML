@@ -13,10 +13,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/login.css" />
-    <form action="/login" method="POST" class="create-form" onsubmit="return validateForm()" name="myForm">
-      <div class="user">
-        <input type="text" name="user" placeholder="Nombre de usuari@" />
-      </div>
   </head>
   <body>
     <header class="main-header">
@@ -68,7 +64,12 @@
     </header>
     <main>
       <section>
-        <form action="/login" method="post" class="formulario">
+        <form
+          action="/login"
+          method="post"
+          class="formulario"
+          onsubmit="return validateForm()"
+        >
           <div class="user">
             <input type="text" name="user" placeholder="Nombre de usuari@" />
           </div>
