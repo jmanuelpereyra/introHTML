@@ -76,23 +76,40 @@ main section form div {
 .intereses input {
   margin-top: 10px;
 }
-.intereses-title {
-  align-self: center;
-}
 .date input {
   margin-top: 10px;
 }
-/* .radio {
+.perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.radio {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   margin-top: 10px;
+}
+.radio input {
+  margin: 0 10px;
+}
+.intereses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.checkbox {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 10px;
+}
+.checkbox input {
+  margin: 0 10px;
 }
 .contrasenia {
   display: flex;
   flex-wrap: wrap;
   margin-top: 10px;
-} */
+}
 .contrasenia input {
   margin-right: 10px;
 }
