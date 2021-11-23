@@ -12,7 +12,7 @@ app.use(urlencoded({ extended: true }));
 // app.listen(3000, () => {
 //   console.log("Servidor OK");
 // });
-app.listen(process.env.PORT || 4000, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log("Servidor funcionando");
 });
 
